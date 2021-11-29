@@ -1,7 +1,7 @@
 """sample test"""
 import unittest
 
-from hello import hello
+from hello import hello,hello2
 
 
 class TestHello(unittest.TestCase):
@@ -17,7 +17,7 @@ class TestHello(unittest.TestCase):
 
     def test_world_ru(self):
         """sample test with ru text"""
-        self.assertEqual(hello(u'мир'), u'привет мир')
+        self.assertEqual(hello2(u'мир'), u'привет мир')
 
 
 
